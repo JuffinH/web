@@ -1,0 +1,9 @@
+listen *:80;
+
+location ^~ /uploads/ {
+    root /home/box/web/;
+}
+
+location ~* ([^\/]*\.[^\.\/]{1,4})$ {
+    
+}
